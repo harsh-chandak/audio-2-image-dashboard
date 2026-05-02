@@ -16,6 +16,22 @@
 
   const VOLUME_KEY = "audio2image-dashboard-volume";
 
+  /**
+   * Dashboard emits root-relative paths (/dual_pipeline_bundle/...) for Render etc.
+   * file:// opens must strip the leading slash so requests stay beside index.html.
+   */
+  function assetUrl(path) {
+    if (!path) return "";
+    if (/^https?:\/\//i.test(path)) return path;
+    if (path.startsWith("/")) {
+      if (window.location.protocol === "file:") {
+        return path.slice(1);
+      }
+      return path;
+    }
+    return path;
+  }
+
   let current = null;
   let lastAutoChunkId = -1;
   let seekDragging = false;
@@ -185,7 +201,7 @@
     updateSeekStyle();
     updateTimeReadout();
     if (p.simpleImage) {
-      imgSimple.src = p.simpleImage;
+      imgSimple.src = assetUrl(p.simpleImage);
     } else {
       imgSimple.removeAttribute("src");
     }
@@ -215,7 +231,7 @@
     if (ch == null) return;
     if (ch.chunk_id === lastAutoChunkId) return;
     lastAutoChunkId = ch.chunk_id;
-    imgAuto.src = ch.image;
+    imgAuto.src = assetUrl(ch.image);
     imgAuto.alt = "Auto pipeline: " + optionLabel(current) + " (chunk " + ch.chunk_id + ")";
   }
 
