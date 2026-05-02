@@ -169,7 +169,7 @@ const DASHBOARD_DATA = {
           "chunk_id": 2,
           "start": 198.162,
           "end": 318.938,
-          "image": "/dual_pipeline_bundle/images/auto_p7573_c2_img3.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7573_c2_img333.png",
           "keyword_appearance_time": "late",
           "keyword_estimated_at": 203.86,
           "image_transition_at": 203.86
