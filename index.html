@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio / Image — Simple vs auto pipeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="shell">
+      <p id="dashboard-empty" class="dashboard-empty" role="alert" hidden>
+        <strong>No passages loaded.</strong>
+        <code>dashboard_data.js</code> is empty. Add rows to
+        <code>dual_pipeline_bundle/csvs/panel_simple.csv</code> and/or
+        <code>panel_auto.csv</code> (at least one is enough), with matching
+        <code>passage_id</code> entries in <code>passage.json</code> for audio, then run
+        <code>python3 build_dashboard_data.py</code> in this folder to regenerate
+        <code>dashboard_data.js</code>.
+      </p>
+      <header class="hero">
+        <p class="app-badge">Passage &middot; audio &middot; images</p>
+        <h1 class="app-title">Simple vs multi-agent pipeline</h1>
+        <p class="app-sub">
+          Listen to a passage and compare illustrated outputs: a single static image (simple) against a
+          three-chunk auto storyboard.
+        </p>
+      </header>
+
+      <header class="top">
+        <div class="control-block passage-block">
+          <label class="field-label" for="passage-select">Passage</label>
+          <div class="passage-row">
+            <select id="passage-select" class="passage-select"></select>
+            <span class="passage-index" id="passage-index" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="control-block audio-rail">
+          <span class="field-label" id="label-listen">Listen along</span>
+          <div class="audio-toolbar" role="group" aria-label="Audio: previous passage, play, seek, volume, next passage">
+            <button type="button" class="nav-btn nav-btn--passage" id="btn-prev" aria-keyshortcuts="ArrowLeft" aria-label="Previous passage" title="Previous passage (←)">
+              <span class="nav-btn-icon" aria-hidden="true">‹</span>
+            </button>
+            <div class="audio-transport">
+              <button type="button" class="play-btn" id="play-btn" aria-label="Play" title="Play or pause (Space)">
+                <svg class="play-btn-icon play-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M8 5v14l11-7L8 5z" />
+                </svg>
+                <svg class="play-btn-icon pause-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M6 5h4v14H6V5zm8 0h4v14h-4V5z" />
+                </svg>
+              </button>
+              <div class="seek-wrap">
+                <input type="range" class="seek" id="seek" min="0" max="0" value="0" step="0.1" aria-label="Seek in current passage" />
+              </div>
+              <time class="time-readout" id="time-readout" datetime="PT0S">0:00 / 0:00</time>
+              <div class="volume-wrap" title="Volume">
+                <span class="volume-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M3 9v6h4l5 4V5L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="range"
+                  class="volume"
+                  id="volume"
+                  min="0"
+                  max="100"
+                  value="100"
+                  step="1"
+                  aria-label="Volume"
+                />
+              </div>
+            </div>
+            <button type="button" class="nav-btn nav-btn--passage" id="btn-next" aria-keyshortcuts="ArrowRight" aria-label="Next passage" title="Next passage (→)">
+              <span class="nav-btn-icon" aria-hidden="true">›</span>
+            </button>
+          </div>
+          <p class="audio-hint" id="audio-hint">‹ › choose passage &middot; play and scrub this passage’s audio (Space = play/pause)</p>
+          <audio id="player" preload="metadata" playsinline class="visually-hidden"></audio>
+        </div>
+      </header>
+
+      <section class="panels" aria-label="Side-by-side illustration comparison">
+        <article class="panel panel-simple">
+          <div class="panel-head">
+            <h2 class="panel-title">Simple pipeline</h2>
+            <span class="panel-pill">1 image</span>
+          </div>
+          <div class="image-frame">
+            <img id="img-simple" alt="" />
+          </div>
+        </article>
+        <article class="panel panel-auto">
+          <div class="panel-head">
+            <h2 class="panel-title">Auto (multi-chunk) pipeline</h2>
+            <span class="panel-pill">3 time chunks</span>
+          </div>
+          <div class="image-frame">
+            <img id="img-auto" alt="" />
+          </div>
+        </article>
+      </section>
+    </div>
+    <script src="dashboard_data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
