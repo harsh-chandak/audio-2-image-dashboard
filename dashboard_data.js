@@ -11,28 +11,28 @@ const DASHBOARD_DATA = {
           "chunk_id": 0,
           "start": 0.672,
           "end": 160.811,
-          "image": "/dual_pipeline_bundle/images/auto_p7469_c0_img22.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7469_c0_img25.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 46.099,
-          "image_transition_at": 46.099
+          "keyword_estimated_at": 117.674,
+          "image_transition_at": 117.674
         },
         {
           "chunk_id": 1,
           "start": 162.273,
           "end": 283.014,
-          "image": "/dual_pipeline_bundle/images/auto_p7469_c1_img23.png",
-          "keyword_appearance_time": "late",
-          "keyword_estimated_at": 168.093,
-          "image_transition_at": 168.093
+          "image": "/dual_pipeline_bundle/images/auto_p7469_c1_img26.png",
+          "keyword_appearance_time": "early",
+          "keyword_estimated_at": 165.598,
+          "image_transition_at": 165.598
         },
         {
           "chunk_id": 2,
           "start": 284.096,
           "end": 393.323,
-          "image": "/dual_pipeline_bundle/images/auto_p7469_c2_img24.png",
-          "keyword_appearance_time": "late",
-          "keyword_estimated_at": 287.939,
-          "image_transition_at": 287.939
+          "image": "/dual_pipeline_bundle/images/auto_p7469_c2_img27.png",
+          "keyword_appearance_time": "mid",
+          "keyword_estimated_at": 349.497,
+          "image_transition_at": 349.497
         }
       ]
     },
@@ -46,16 +46,16 @@ const DASHBOARD_DATA = {
           "chunk_id": 0,
           "start": 0.503,
           "end": 100.572,
-          "image": "/dual_pipeline_bundle/images/auto_p7484_c0_img25.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7484_c0_img28.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 43.932,
-          "image_transition_at": 43.932
+          "keyword_estimated_at": 54.28,
+          "image_transition_at": 54.28
         },
         {
           "chunk_id": 1,
           "start": 101.264,
           "end": 197.176,
-          "image": "/dual_pipeline_bundle/images/auto_p7484_c1_img26.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7484_c1_img29.png",
           "keyword_appearance_time": "mid",
           "keyword_estimated_at": 151.485,
           "image_transition_at": 151.485
@@ -64,10 +64,10 @@ const DASHBOARD_DATA = {
           "chunk_id": 2,
           "start": 197.957,
           "end": 281.003,
-          "image": "/dual_pipeline_bundle/images/auto_p7484_c2_img27.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7484_c2_img30.png",
           "keyword_appearance_time": "late",
-          "keyword_estimated_at": 203.654,
-          "image_transition_at": 203.654
+          "keyword_estimated_at": 278.39,
+          "image_transition_at": 278.39
         }
       ]
     },
@@ -83,8 +83,8 @@ const DASHBOARD_DATA = {
           "end": 109.669,
           "image": "/dual_pipeline_bundle/images/auto_p7510_c0_img19.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 3.095,
-          "image_transition_at": 3.095
+          "keyword_estimated_at": 42.324,
+          "image_transition_at": 42.324
         },
         {
           "chunk_id": 1,
@@ -92,17 +92,17 @@ const DASHBOARD_DATA = {
           "end": 237.706,
           "image": "/dual_pipeline_bundle/images/auto_p7510_c1_img20.png",
           "keyword_appearance_time": "early",
-          "keyword_estimated_at": 113.136,
-          "image_transition_at": 113.136
+          "keyword_estimated_at": 128.465,
+          "image_transition_at": 128.465
         },
         {
           "chunk_id": 2,
           "start": 238.326,
           "end": 323.646,
           "image": "/dual_pipeline_bundle/images/auto_p7510_c2_img21.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 243.799,
-          "image_transition_at": 243.799
+          "keyword_appearance_time": "mid",
+          "keyword_estimated_at": 294.459,
+          "image_transition_at": 294.459
         }
       ]
     },
@@ -118,8 +118,8 @@ const DASHBOARD_DATA = {
           "end": 88.58,
           "image": "/dual_pipeline_bundle/images/auto_p7520_c0_img1.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 20.376,
-          "image_transition_at": 20.376
+          "keyword_estimated_at": 39.341,
+          "image_transition_at": 39.341
         },
         {
           "chunk_id": 1,
@@ -127,8 +127,8 @@ const DASHBOARD_DATA = {
           "end": 221.474,
           "image": "/dual_pipeline_bundle/images/auto_p7520_c1_img2.png",
           "keyword_appearance_time": "late",
-          "keyword_estimated_at": 110.079,
-          "image_transition_at": 110.079
+          "keyword_estimated_at": 221.348,
+          "image_transition_at": 221.348
         },
         {
           "chunk_id": 2,
@@ -136,8 +136,8 @@ const DASHBOARD_DATA = {
           "end": 311.007,
           "image": "/dual_pipeline_bundle/images/auto_p7520_c2_img3.png",
           "keyword_appearance_time": "early",
-          "keyword_estimated_at": 225.733,
-          "image_transition_at": 225.733
+          "keyword_estimated_at": 241.086,
+          "image_transition_at": 241.086
         }
       ]
     },
@@ -151,28 +151,28 @@ const DASHBOARD_DATA = {
           "chunk_id": 0,
           "start": 0.031,
           "end": 105.679,
-          "image": "/dual_pipeline_bundle/images/auto_p7573_c0_img1.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7573_c0_img4.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 5.92,
-          "image_transition_at": 5.92
+          "keyword_estimated_at": 4.057,
+          "image_transition_at": 4.057
         },
         {
           "chunk_id": 1,
           "start": 107.441,
           "end": 196.499,
-          "image": "/dual_pipeline_bundle/images/auto_p7573_c1_img2.png",
-          "keyword_appearance_time": "late",
-          "keyword_estimated_at": 115.99,
-          "image_transition_at": 115.99
+          "image": "/dual_pipeline_bundle/images/auto_p7573_c1_img5.png",
+          "keyword_appearance_time": "early",
+          "keyword_estimated_at": 129.578,
+          "image_transition_at": 129.578
         },
         {
           "chunk_id": 2,
           "start": 198.162,
           "end": 318.938,
-          "image": "/dual_pipeline_bundle/images/auto_p7573_c2_img333.png",
+          "image": "/dual_pipeline_bundle/images/auto_p7573_c2_img6.png",
           "keyword_appearance_time": "late",
-          "keyword_estimated_at": 203.86,
-          "image_transition_at": 203.86
+          "keyword_estimated_at": 282.987,
+          "image_transition_at": 282.987
         }
       ]
     },
@@ -188,8 +188,8 @@ const DASHBOARD_DATA = {
           "end": 95.973,
           "image": "/dual_pipeline_bundle/images/auto_p7795_c0_img16.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 16.233,
-          "image_transition_at": 16.233
+          "keyword_estimated_at": 29.065,
+          "image_transition_at": 29.065
         },
         {
           "chunk_id": 1,
@@ -197,17 +197,17 @@ const DASHBOARD_DATA = {
           "end": 188.766,
           "image": "/dual_pipeline_bundle/images/auto_p7795_c1_img17.png",
           "keyword_appearance_time": "late",
-          "keyword_estimated_at": 121.078,
-          "image_transition_at": 121.078
+          "keyword_estimated_at": 163.209,
+          "image_transition_at": 163.209
         },
         {
           "chunk_id": 2,
           "start": 189.547,
           "end": 299.852,
           "image": "/dual_pipeline_bundle/images/auto_p7795_c2_img18.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 193.112,
-          "image_transition_at": 193.112
+          "keyword_appearance_time": "late",
+          "keyword_estimated_at": 290.237,
+          "image_transition_at": 290.237
         }
       ]
     },
@@ -223,26 +223,26 @@ const DASHBOARD_DATA = {
           "end": 122.265,
           "image": "/dual_pipeline_bundle/images/auto_p9031_c0_img13.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 17.41,
-          "image_transition_at": 17.41
+          "keyword_estimated_at": 17.02,
+          "image_transition_at": 17.02
         },
         {
           "chunk_id": 1,
           "start": 123.266,
           "end": 237.487,
           "image": "/dual_pipeline_bundle/images/auto_p9031_c1_img14.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 148.987,
-          "image_transition_at": 148.987
+          "keyword_appearance_time": "late",
+          "keyword_estimated_at": 188.056,
+          "image_transition_at": 188.056
         },
         {
           "chunk_id": 2,
           "start": 238.247,
           "end": 329.788,
           "image": "/dual_pipeline_bundle/images/auto_p9031_c2_img15.png",
-          "keyword_appearance_time": "late",
-          "keyword_estimated_at": 282.4,
-          "image_transition_at": 282.4
+          "keyword_appearance_time": "early",
+          "keyword_estimated_at": 263.349,
+          "image_transition_at": 263.349
         }
       ]
     },
@@ -256,7 +256,7 @@ const DASHBOARD_DATA = {
           "chunk_id": 0,
           "start": 0.689,
           "end": 139.53,
-          "image": "/dual_pipeline_bundle/images/auto_p9088_c0_img28.png",
+          "image": "/dual_pipeline_bundle/images/auto_p9088_c0_img22.png",
           "keyword_appearance_time": "n/a",
           "keyword_estimated_at": 32.399,
           "image_transition_at": 32.399
@@ -265,19 +265,19 @@ const DASHBOARD_DATA = {
           "chunk_id": 1,
           "start": 140.452,
           "end": 214.849,
-          "image": "/dual_pipeline_bundle/images/auto_p9088_c1_img29.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 145.68,
-          "image_transition_at": 145.68
+          "image": "/dual_pipeline_bundle/images/auto_p9088_c1_img23.png",
+          "keyword_appearance_time": "mid",
+          "keyword_estimated_at": 181.778,
+          "image_transition_at": 181.778
         },
         {
           "chunk_id": 2,
           "start": 215.53,
           "end": 274.253,
-          "image": "/dual_pipeline_bundle/images/auto_p9088_c2_img30.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 217.854,
-          "image_transition_at": 217.854
+          "image": "/dual_pipeline_bundle/images/auto_p9088_c2_img24.png",
+          "keyword_appearance_time": "mid",
+          "keyword_estimated_at": 252.602,
+          "image_transition_at": 252.602
         }
       ]
     },
@@ -293,8 +293,8 @@ const DASHBOARD_DATA = {
           "end": 87.48,
           "image": "/dual_pipeline_bundle/images/auto_p9685_c0_img7.png",
           "keyword_appearance_time": "n/a",
-          "keyword_estimated_at": 75.013,
-          "image_transition_at": 75.013
+          "keyword_estimated_at": 32.783,
+          "image_transition_at": 32.783
         },
         {
           "chunk_id": 1,
@@ -310,9 +310,9 @@ const DASHBOARD_DATA = {
           "start": 194.625,
           "end": 252.838,
           "image": "/dual_pipeline_bundle/images/auto_p9685_c2_img9.png",
-          "keyword_appearance_time": "late",
-          "keyword_estimated_at": 249.333,
-          "image_transition_at": 249.333
+          "keyword_appearance_time": "early",
+          "keyword_estimated_at": 196.596,
+          "image_transition_at": 196.596
         }
       ]
     },
@@ -337,17 +337,17 @@ const DASHBOARD_DATA = {
           "end": 191.346,
           "image": "/dual_pipeline_bundle/images/auto_p10510_c1_img11.png",
           "keyword_appearance_time": "early",
-          "keyword_estimated_at": 99.485,
-          "image_transition_at": 99.485
+          "keyword_estimated_at": 116.031,
+          "image_transition_at": 116.031
         },
         {
           "chunk_id": 2,
           "start": 191.647,
           "end": 306.062,
           "image": "/dual_pipeline_bundle/images/auto_p10510_c2_img12.png",
-          "keyword_appearance_time": "early",
-          "keyword_estimated_at": 229.894,
-          "image_transition_at": 229.894
+          "keyword_appearance_time": "late",
+          "keyword_estimated_at": 239.863,
+          "image_transition_at": 239.863
         }
       ]
     }
